@@ -1,0 +1,68 @@
+{
+  "name": "little_app_jsonloading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jsonloader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
+    "user_create_table": "node ./user/user_create_table.js",
+    "user_delete_table": "node ./user/user_delete_table.js",
+    "user_load_table": "cross-env TABLE=user node jsonloader.js",
+    "user_read_item": "node ./user/user_read_item.js",
+    "user_scan_table": "node ./user/user_scan_table.js",
+    
+    "city_create_table": "node ./city/city_create_table.js",
+    "city_delete_table": "node ./city/city_delete_table.js",
+    "city_load_table": "cross-env TABLE=city node jsonloader.js",
+    "city_read_item": "node ./city/city_read_item.js",
+    "city_delete_item": "node ./city/city_delete_item.js",
+    "city_scan_table": "node ./city/city_scan_table.js",
+    
+    "dest_create_table": "node ./dest/dest_create_table.js",
+    "dest_delete_table": "node ./dest/dest_delete_table.js",
+    "dest_load_table": "cross-env TABLE=destination node jsonloader.js",    
+    "dest_read_item": "node ./dest/dest_read_item.js",
+    "dest_put_item": "node ./dest/dest_put_item.js",
+    "dest_delete_item": "node ./dest/dest_delete_item.js",
+    "dest_update_item": "node ./dest/dest_update_item.js",
+    "dest_scan_table": "node ./dest/dest_scan_table.js",
+    
+    "station_create_table": "node ./station/station_create_table.js",
+    "station_delete_table": "node ./station/station_delete_table.js",
+    "station_load_table": "cross-env TABLE=station node jsonloader.js",    
+    "station_read_item": "node ./station/station_read_item.js",
+    "station_query_items": "node ./station/station_query_items.js",
+    "station_scan_table": "node ./station/station_scan_table.js",
+    "station_update_item": "node ./station/station_update_item.js",
+
+    "stationcode_create_table": "node ./stationcode/stationcode_create_table.js",
+    "stationcode_delete_table": "node ./stationcode/stationcode_delete_table.js",
+    "stationcode_load_table": "cross-env TABLE=stationcode node jsonloader.js",
+    "stationcode_scan_table": "node ./stationcode/stationcode_scan_table.js",
+    "stationcode_read_item": "node ./stationcode/stationcode_read_item.js",
+    "stationcode_update_item": "node ./stationcode/stationcode_update_item.js",
+
+    "route_create_table": "node ./route/route_create_table.js",
+    "route_delete_table": "node ./route/route_delete_table.js",
+    "route_load_table": "cross-env TABLE=route node jsonloader.js",    
+    "route_read_item": "node ./route/route_read_item.js",
+    "route_query_items": "node ./route/route_query_items.js",
+    "route_scan_table": "node ./route/route_scan_table.js",
+
+    "status_create_table": "node ./status/status_create_table.js",
+    "status_delete_table": "node ./status/status_delete_table.js",
+    "status_load_table": "cross-env TABLE=status node jsonloader.js",    
+    "status_scan_table": "node ./status/status_scan_table.js",    
+    "status_update_item": "node ./status/status_update_item.js",    
+    "status_read_item": "node ./status/status_read_item.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.102.0",
+    "cross-env": "^5.0.5",
+    "jsonfile": "^3.0.1"
+  }
+}
